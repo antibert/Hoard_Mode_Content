@@ -1,2 +1,2 @@
-Project name = hoard_mode
-all files associated should follow that name
+-- Project name = Hoard_Mode
+-- all files associated should follow that name
