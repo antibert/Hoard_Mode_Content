@@ -3,5 +3,5 @@
 	"Shader"	"ui.vfx"
 	"F_STENCIL_MASKING"	"1"
 	"F_TRANSLUCENT"	"0"
-	"Texture"	"materials/overviews/hoard_mode.tga"
+	"Texture"	"materials/overviews/Hoard_Mode.tga"
 }
