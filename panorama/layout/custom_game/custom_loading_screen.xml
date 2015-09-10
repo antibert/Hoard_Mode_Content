@@ -5,7 +5,7 @@
 	</styles>
 	<Panel class="Hoard_ModeLoadingRoot">
 		<Panel id="seq" >
-			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/background.png" />
+			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading.png" />
 		</Panel>
 		<Panel id="TitlePanel">
 			<Label id="Hoard_ModeTitle" text="#addon_game_name" style="" />
