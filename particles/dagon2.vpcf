@@ -4,10 +4,10 @@
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 32
 	m_ConstantColor =
-	[
-		255,
-		255,
-		0,
+[
+255,
+255,
+0,
 		255,
 	]
 	m_Renderers =
@@ -17,7 +17,7 @@
 			m_nSequenceCombineMode = "SEQUENCE_COMBINE_MODE_USE_SEQUENCE_0"
 			m_bAdditive = true
 			m_hTexture = resource:"materials/particle/beam_generic_3.vtex"
-			m_flRadiusScale = 0.500000
+m_flRadiusScale = 0.55
 			m_flFinalTextureScaleU = -1.000000
 			m_flFinalTextureOffsetU = 1.000000
 			m_flTextureVWorldSize = 6791.632324
@@ -42,7 +42,7 @@
 			m_flFadeOutTime = 0.500000
 		},
 		{
-			_class = "C_OP_InterpolateRadius"
+_class = "C_OP_InterpolateRadius"
 			m_flBias = 0.765000
 			m_nOpEndCapState = 0
 			m_flStartScale = 0.000000
@@ -80,10 +80,10 @@
 		{
 			_class = "C_OP_ColorInterpolate"
 			m_ColorFade =
-			[
-				255,
-				255,
-				0,
+[
+255,
+255,
+0,
 				255,
 			]
 		},
@@ -126,8 +126,8 @@
 		{
 			_class = "C_INIT_CreateInEpitrochoid"
 			m_nComponent1 = 2
-			m_flRadius1 = 15.000000
-			m_flRadius2 = -4.000000
+m_flRadius1 = 16.5
+m_flRadius2 = -0.4
 			m_flOffset = 9.000000
 			m_flParticleDensity = 0.400000
 			m_bUseCount = true
@@ -167,9 +167,9 @@
 			m_flOutputMax = 1.500000
 		},
 		{
-			_class = "C_INIT_RandomRadius"
-			m_flRadiusMin = 75.000000
-			m_flRadiusMax = 150.000000
+_class = "C_INIT_RandomRadius"
+m_flRadiusMin = 82.5
+m_flRadiusMax = 165
 		},
 		{
 			_class = "C_INIT_InitialVelocityNoise"
