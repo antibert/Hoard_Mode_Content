@@ -5,7 +5,7 @@
 	</styles>
 	<Panel class="Hoard_ModeLoadingRoot">
 		<Panel id="seq" >
-			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading6.png" />
+			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading7.png" />
 		</Panel>
 	</Panel>
 </root>
