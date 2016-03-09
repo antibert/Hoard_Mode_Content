@@ -1,14 +1,36 @@
 @define TotalLength: 30s;
 @define TimingFunc: linear;
 @define IterationCount: 1;
-@define AnimationDelay: 0s;
 
-.AddonLoadingRoot
+.Hoard_ModeLoadingRoot
 {
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	overflow: clip;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: clip;
+}
+
+#GameModeDescription
+{
+    font-size: 27px;
+	text-transform: uppercase;
+	color: #cccccc;
+}
+
+#GameModeHints
+{
+	margin: 10px;
+	font-size: 18px;
+	color: #8f9092;
+}
+
+#GameModeImage
+{
+	horizontal-align: center;
+	width: 200px;
+	height: 150px;
+
+	box-shadow: inset black 5px 5px 10px 10px;
 }
 
 #TitlePanel
@@ -20,7 +42,15 @@
 	flow-children: right;
 }
 
-#AddonTitle
+#OverthrowIcon
+{
+	width: 80px;
+	height: 80px;
+	vertical-align: center;
+	margin-right: 15px;
+}
+
+#Hoard_ModeTitle
 {
 	margin-bottom: -15px;
 	vertical-align: center;
@@ -37,36 +67,37 @@
 	background-size: 100% 100%;
 }
 
-#CustomBg
+.SeqBg
 {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}
 
-	margin-top: 350px;
-	overflow: clip;
-	pre-transform-scale2d: 1.0;
-	animation-name: gamemode_anim;
-	animation-delay: AnimationDelay;
+#seq
+{
+    overflow: clip;
+	pre-transform-scale2d: 1.35, 1.35;
+}
+
+@keyframes 'x' {}
+
+#seq_bg
+{
+	animation-name: seq_bg_anim;
 	animation-duration: TotalLength;
 	animation-timing-function: TimingFunc;
 	animation-iteration-count: IterationCount;
+    margin-left: 0px;
 }
 
-#gamemode
-{
-	margin-left: 160px;
-	/*margin-bottom: 0px;*/
-
-}
-
-@keyframes 'gamemode_anim'
+@keyframes 'seq_bg_anim'
 {
 	0%
 	{
-		transform: translateX( 0px ) translateY( 0px );
-		pre-transform-scale2d: .8;
 	}
 
 	100%
 	{
-		transform: translateX( 0px ) translateY( -200px );
 	}
 }
