@@ -11,6 +11,16 @@
 	overflow: clip;
 }
 
+#TitlePanel
+{
+	display: none;
+}
+
+#AddonTitle
+{
+	display: none;
+}
+
 .SeqImg
 {
 	background-repeat: no-repeat;
