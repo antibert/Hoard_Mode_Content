@@ -37,10 +37,14 @@
 					</Panel>
 
 				</Panel>
-
+               
+               <Panel id="CustomGameCurrDiff">
+                <Label class="CustomGameSettingsTitle" hittest="false" text="Current difficulty:"/>
+				<Label id="CustomGameCurrDiffText" hittest="false" text="Easy"/>
+               </Panel>
+				
 				<Panel class="ContainerCustomGameSettingsPanels" hittest="false">
 					<Panel class="ContainerCustomGameSettingsTitle" hittest="false">
-						<Label class="CustomGameSettingsHeaderTitle" text="Custom Game Settings" hittest="false"/>
 					</Panel>
 					<Panel class="CustomSettingPanel" hittest="false">
 						<Panel class="ContainerCustomDifficultyTitle" hittest="false">
