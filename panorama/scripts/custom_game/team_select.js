@@ -49,7 +49,6 @@ function CheckForHostPrivileges()
 	$.GetContextPanel().SetHasClass( "player_has_host_privileges", playerInfo.player_has_host_privileges );
 }
 
-
 //--------------------------------------------------------------------------------------------------
 // Update the state for the transition timer periodically
 //--------------------------------------------------------------------------------------------------
@@ -86,9 +85,28 @@ function UpdateTimer()
 	$.Schedule( 0.1, UpdateTimer );
 }
 
-function OnVoteButtonPressed(category, vote) {
-	//$.Msg("Category: ", category);
-	//$.Msg("Vote: ", vote);
+function DifficultyUpdate(event_data)
+{    
+    if ( event_data["difficulty"] == "0" )
+	{
+        $( "#CustomGameCurrDiffText" ).text="Easy";
+	}
+	else if (event_data["difficulty"] == "1")
+	{
+        $( "#CustomGameCurrDiffText" ).text="Medium";
+	}
+    else if (event_data["difficulty"] == "2")
+    {
+        $( "#CustomGameCurrDiffText" ).text="Hard";
+    }
+    else
+    {
+        $( "#CustomGameCurrDiffText" ).text="Ultra";
+    }
+}
+
+function OnVoteButtonPressed(category, vote) {    
+    //Sending vote data to server's LUA interpreter
 	GameEvents.SendCustomGameEventToServer( "setting_vote", { "category":category, "vote":vote } );
 }
 
@@ -103,5 +121,6 @@ function OnVoteButtonPressed(category, vote) {
 
 	// Start updating the timer, this function will schedule itself to be called periodically
 	UpdateTimer();
-
+    
+    GameEvents.Subscribe( "info_difficulty", DifficultyUpdate);
 })();
