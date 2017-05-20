@@ -1,2 +1,0 @@
--- Project name = Hoard_Mode
--- all files associated should follow that name

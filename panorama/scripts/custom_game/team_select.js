@@ -119,6 +119,16 @@ function OnVoteButtonPressed(category, vote) {
 
 	Game.AutoAssignPlayersToTeams();
 
+	var mapInfo = Game.GetMapInfo();
+	$( "#MapInfo" ).SetDialogVariable( "map_name", mapInfo.map_display_name );
+
+	if (mapInfo.map_display_name.indexOf('ultra') !== -1) {
+		$( "#CustomGameCurrDiffText" ).text="Ultra";
+		$( "#ContainerCustomGameSettingOptions").style.display = 'none';
+		$( "#CancelAndUnlockButton").style.display = 'none';
+		OnLockAndStartPressed();
+	}
+
 	// Start updating the timer, this function will schedule itself to be called periodically
 	UpdateTimer();
     

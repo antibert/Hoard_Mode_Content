@@ -55,7 +55,7 @@
 							<RadioButton class="CGSRadio" group="Difficulty" text="Easy" onactivate="OnVoteButtonPressed('difficulty', 0)"/>
 							<RadioButton class="CGSRadio" group="Difficulty" text="Medium" onactivate="OnVoteButtonPressed('difficulty', 1)"/>
 							<RadioButton class="CGSRadio" group="Difficulty" text="Hard" onactivate="OnVoteButtonPressed('difficulty', 2)"/>
-							<RadioButton class="CGSRadio" group="Difficulty" text="Ultra" onactivate="OnVoteButtonPressed('difficulty', 3)"/>
+							<!-- RadioButton class="CGSRadio" group="Difficulty" text="Ultra" onactivate="OnVoteButtonPressed('difficulty', 3)"/ -->
 						</Panel>
 					</Panel>
 				</Panel>
