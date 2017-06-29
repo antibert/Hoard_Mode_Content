@@ -46,7 +46,7 @@
 				<Panel class="ContainerCustomGameSettingsPanels" hittest="false">
 					<Panel class="ContainerCustomGameSettingsTitle" hittest="false">
 					</Panel>
-					<Panel class="CustomSettingPanel" hittest="false">
+					<Panel id="CustomSettingPanel" class="CustomSettingPanel" hittest="false">
 						<Panel class="ContainerCustomDifficultyTitle" hittest="false">
 							<Label class="CustomGameSettingsTitle" id="CustomGameLengthTitle1" hittest="false" text="Difficulty"/>
 						</Panel>

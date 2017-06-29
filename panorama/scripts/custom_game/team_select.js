@@ -124,7 +124,7 @@ function OnVoteButtonPressed(category, vote) {
 
 	if (mapInfo.map_display_name.indexOf('ultra') !== -1) {
 		$( "#CustomGameCurrDiffText" ).text="Ultra";
-		$( "#ContainerCustomGameSettingOptions").style.display = 'none';
+		$( "#CustomSettingPanel").visible = false;
 		$( "#CancelAndUnlockButton").style.display = 'none';
 		OnLockAndStartPressed();
 	}
