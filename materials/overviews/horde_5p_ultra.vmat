@@ -2,5 +2,5 @@
 {
 	"Shader"	"ui.vfx"
 	"F_TRANSLUCENT"	"0"
-	"Texture"	"materials/overviews/horde_4p_ultra.tga"
+	"Texture"	"materials/overviews/horde_5p_ultra.tga"
 }
