@@ -1,9 +1,19 @@
 var tipArray = [
   "Mystery Orbs could be built into items of Exalted quality. Exalted items have all their stats greatly improved. Exalted items are shareable and unsellable",
   "Experience from experience sources is not split between players, but instead is granted 100% each. You won't lose any experience, no matter how many teammates you have nearby",
-  "Kills made by friendly towers, lane creeps and friendly heroes will only grant 30% of the gold bounty. Last hits are still the only way to get 100% gold bounty.",
-  "Bottom lane has it's own shop. Don't wait for courier, buy your stuff there.",
+  "Kills made by friendly towers, lane creeps and friendly heroes will only grant 30% of the gold bounty. Last hits are still the only way to get a full gold bounty.",
+  "Bottom lane has it's own shop near the creep gather spot.",
   "Moonshards can be consumed infinite times.",
   "Buildings like towers and barracks could be upgraded using Building Upgrade item, available at the shop. Towers will get more  damage, armor, useful auras and a splitshot. Upgrades to the barracks will increase friendly creeps damage, armor and total amount. The upgrade will persist even if the barracks fall.",
-  "Orb of Venom is a good starting item for ranged heroes with no reliable way to damage creeps. It deals 10 magical splash damage in aoe and is stackable.",
-  "Losing towers or barracks to Horde makes enemy creeps stronger. Destroying Horde towers and barracks grants your team useful buffs"];
+  "Orb of Venom is a good starting item for ranged heroes with no reliable damage. It deals 10 magical splash damage in aoe and is stackable.",
+  "Losing towers or barracks to Horde makes enemy creeps stronger. Destroying Horde towers and barracks grants your team some useful buffs",
+  "Upgraded Aether lens improves your cast range greatly. Best choice if you want to cast spells from a safe position.",
+  "Willful Resonance deals splash magic damage. Best choice for ranged mage heroes.",
+  "Aghanim's Regalia provides great spell boost damage for a short time. Best choice if a situation may get out of hand.",
+  "Cursed Rapier provides great damage boost based on health, drained from it's user. Cursed rapier provides 20% resistance to all damage types, but also reduces incoming healing by -35%",
+  "Heart of Tarrasque is slightly redone. It breaks on creep attack, but still has some base health regeneration",
+  "Horde Wand gains a charge for every dying creep nearby the user. Charges may be used to restore some health and mana",
+  "Dragon Javelins splits user's attacks in a barrage of javelins, dealing bonus damage to nearby users. Bonus attacks provided by Dragon Javelins won't apply modifiers like critical hits, lifesteal and etc.",
+  "Wasp provides user with an active ability to gain flying movement for short period of time.",
+  "Boots of Travel 3 provides user with an ability to teleport anywhere on the map",
+  "Helm of Oppressor allows to dominate a non-boss, non-ancient creep anywhere on the map"];
