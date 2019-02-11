@@ -3,10 +3,25 @@
 		<include src="file://{resources}/styles/dotastyles.css" />
 		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
 	</styles>
+	<scripts>
+	  <include src="file://{resources}/scripts/custom_game/tip_of_the_day_text.js" />
+		<include src="file://{resources}/scripts/custom_game/custom_loading_screen.js" />
+	</scripts>
 	<Panel class="Hoard_ModeLoadingRoot">
 		<Panel id="seq" >
 			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading8.png" />
 		</Panel>
-		<CustomUIElement type="Hud"                 layoutfile="file://{resources}/layout/custom_game/statcollection.xml" />
+		<Panel id="Hoard_TipOfTheDay" hittest="true">
+      <Panel id="Hoard_TipOfTheDay_Container">
+        <Panel id="Hoard_TipOfTheDay_LeftArrow" onactivate="prevTipOfTheDay()">
+          <Image src="file://{images}/control_icons/arrow_solid_left.png" />
+        </Panel>
+        <Label id="Hoard_TipOfTheDay_Text" text="Tip of the day" />
+        <Panel id="Hoard_TipOfTheDay_RightArrow" onactivate="nextTipOfTheDay()">
+          <Image src="file://{images}/control_icons/arrow_solid_right.png" />
+        </Panel>
+      </Panel>
+    </Panel>
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/statcollection.xml" />
 	</Panel>
 </root>
